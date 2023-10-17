@@ -1,0 +1,110 @@
+*{
+   
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:  hsl(0, 0%, 94%);
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+#cont{
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem 2rem 10rem 2rem;
+    padding: 3rem;
+    position: relative;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maininput{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.maininput label{
+    text-transform: uppercase;
+}
+.maininput input{
+    width: 50%;
+    padding: 10px;
+    font-size: 32px;
+}
+hr{
+    margin-top: 3rem;
+    color: hsl(0, 1%, 44%);
+}
+.domath{
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+}
+.domath:hover{
+    background-color: black;
+}
+.answercont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ans{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ans #years, .ans #months, .ans #days{
+    color: hsl(259, 100%, 65%);
+} 
+.ans span{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 800;
+}
+/* .warning{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: 30px;
+} */
+.projectinfo {
+    font-size: 11px; 
+    text-align: center; 
+}
+.projectinfo a{
+    color: hsl(0, 1%, 44%); 
+}
+@media screen and (max-width:650px) {
+    .maininput input{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .maininput input{
+        font-size: 20px;
+    }
+    .domath{
+    right: 40%;
+    }
+}
+@media screen and (max-width:400px) {
+    .maininput input{
+        font-size: small;
+        /* width: 40%; */
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="brian.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <div id="cont">
+    <div class="calc">
+      <div class="top">
+        <div class="maininput">
+          <label for="day">Day</label>
+          <input type="number" name="" placeholder="DD" id="day" required>
+          <span class="warning"></span>
+        </div>
+
+        <div class="maininput">
+          <label for="month">Month</label>
+          <input type="number" name="" placeholder="MM" id="month" required>
+          <span class="warning"></span>
+        </div>
+
+        <div class="maininput">
+          <label for="year">Years</label>
+          <input type="number" name="" placeholder="YYYY" id="year" required>
+          <!-- <span class="warning"></span> -->
+        </div>
+      </div>
+      
+      <div class="domath" id="button">
+        <img src="./assets/images/icon-arrow.svg" alt="" srcset="">
+      </div>
+      <hr>
+      <div class="answercont">
+        <div class="ans">
+          <span id="years">--</span> <span>years</span>
+        </div>
+
+        <div class="ans">
+          <span id="months">--</span> <span>months</span>
+        </div>
+
+        <div class="ans">
+          <span id="days">--</span> <span>days</span>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- <div class="projectinfo">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank">Brian Gacheru</a>.
+  </div> -->
+  <script src="brian.js"></script>
+</body>
+</html>
